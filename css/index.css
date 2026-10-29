@@ -2,7 +2,7 @@ html {
     background-color: #D88C5A;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace, Arial, sans-serif;
     color: #2F2A26;
     text-align: center;
     margin: 0;
@@ -22,6 +22,13 @@ header > nav > ul {
 header a {
     color: #FFF8F0;
     font-size: large;
+}
+header a:hover {
+    background-color: #2F2A26;
+    border-radius: 2px;
+}
+main {
+    margin: 0 10px;
 }
 
 @media (max-width: 768px) {
@@ -51,6 +58,7 @@ h1 {
     font-size: 42px;
     padding: 14px;
     margin-bottom: 60px;
+    font-family: Arial, sans-serif;
 }
 p {
     margin-bottom: 16px;
