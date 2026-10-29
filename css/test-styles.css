@@ -1,0 +1,183 @@
+button:focus-visible {
+    outline: 3px solid #0066cc;
+    outline-offset: 2px;
+}
+
+.practice-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    .practice-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .practice-nav {
+        gap: 32px;
+    }
+}
+
+.practice-nav a {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+.card-row {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    flex: 1;
+}
+
+.card:nth-child(2) {
+    flex: 2;
+}
+
+/* ----------------------------------------------------- */
+
+:root {
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+}
+
+.card {
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.card-title {
+    margin-bottom: var(--space-sm);
+}
+
+body {
+    color: #661212;
+    font-family: "Rubik Storm", Roboto, Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(169, 222, 166);
+    color: white;
+    padding: var(--space-md)
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+aside {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+section {
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: var(--space-sm) 0 var(--space-md);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #0066cc;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: #004499;
+    outline: 2px solid #004499;
+}
+
+a:active {
+    color: #002244;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background-color: #004499;
+    color: white;
+}
+
+.button-link:focus {
+    outline: 2px solid #004499;
+    outline-offset: 2px;
+}
+
+.button-link:active {
+    background-color: #002244;
+}
+
+.highlight {
+    color: blue;
+}
+
+.container {
+    border: 2px solid navy;
+    color: navy;
+}
+
+.container p {
+    border: initial;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+}
+
+.card-button:focus-visible {
+    outline: 3px solid blue;
+    outline-offset: 2px;
+}
+
+.card-button:active {
+    transform: scale(0.97);
+}

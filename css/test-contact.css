@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.border-demo {
+    border: 3px solid blue;
+    border-bottom: 6px dashed red;
+}
+
+.content-sizing,
+.border-sizing {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+.content-sizing {
+    box-sizing: content-box;
+}
+.border-sizing {
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------- */
+
+h1 {
+    background-color: aqua;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 1px solid #cccccc;
+    padding: 10px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+}
+
+.button-link {
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: #0066cc;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link {
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #0066cc;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+	background-color: #0066cc;
+	color: white;
+}
+
+.nav-link:focus {
+	outline: 2px solid #0066cc;
+	outline-offset: 2px;
+}
+
+.nav-link:active {
+	background-color: #002244;
+	color: white;
+}
+
