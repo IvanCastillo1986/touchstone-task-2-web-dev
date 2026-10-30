@@ -25,7 +25,7 @@ header a {
 }
 header a:hover {
     background-color: #2F2A26;
-    border-radius: 2pxkk;
+    border-radius: 2px;
 }
 main {
     margin: 0 10px;

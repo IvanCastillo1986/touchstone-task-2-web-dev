@@ -10,21 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap" rel="stylesheet">
     <!-- End Rubik Storm from Google Fonts -->
     <link rel="stylesheet" href="css/test-styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <a href="#main-content" class="button-link">Skip to main content</a>
     <header>
-        <nav aria-label="Primary">
+        <nav aria-label="Primary" id="main-nav">
             <ul>
-                <li><a href="test-styles.html">Test Styles</a></li>
-                <li><a href="test-contact.html" aria-current="page">Test Contact</a></li>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="test-styles.html" aria-current="page" class="nav-link">Test Styles</a></li>
+                <li><a href="test-contact.html" class="nav-link">Test Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class=nav-link"">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+
+    <div id="status"></div>
+
+    <p id="intro">Hello, world!</p>
+
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+
+
+
+
     
     <main id="main-content">
         <h1 id="page-title">Testing styles</h1>
@@ -101,5 +115,6 @@
         </nav>
         <p>&copy; 2026 North Star Bakery Inc.</p>
     </footer>
+
 </body>
 </html>

@@ -1,0 +1,16 @@
+.highlight {
+    background-color: yellow;
+}
+
+.dim {
+    background-color: gray;
+    opacity: 0.6;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.open {
+    display: block;
+}

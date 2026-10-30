@@ -22,6 +22,7 @@ header > nav > ul {
 header a {
     color: #FFF8F0;
     font-size: large;
+    padding: 10px;
 }
 header a:hover {
     background-color: #2F2A26;
