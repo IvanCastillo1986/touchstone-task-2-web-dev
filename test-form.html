@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>North Star Bakery</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/test-form.js" defer></script>
+</head>
+<body>
+    <a href="#main-content">Skip to main content</a>
+    <header>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <h1>Testing Form</h1>
+
+        <h2>Welcome to our contact page!</h2>
+
+        <form action="/contact" method="post" id="features-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <label for="full_name">Full Name
+                    <input type="text" name="full_name" id="full_name"
+                    minlength="2" maxlength="50"
+                    >
+                </label>
+                
+                <label for="email">
+                    Email Address
+                    <input type="email" name="email" id="email" >
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Request Type</legend>
+                <label>
+                    <input type="radio" name="pre-order" value="pre-order"> Pre-order
+                </label>
+                <label>
+                    <input type="radio" name="question" value="question"> General Question
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <label for="pickup-date">Pickup Date</label>
+                <input type="date" name="pickup-date" id="pickup-date">
+
+                <label for="item-details">Item Details:</label>
+                <textarea 
+                id="item-details" name="item-details"
+                minlength="1" maxlength="500" 
+                ></textarea>
+                
+                <label for="message">Allergies:</label>
+                <textarea 
+                id="message" name="message"
+                minlength="1" maxlength="500" 
+                ></textarea>
+            </fieldset>
+
+            <button type="submit">Send Inquiry</button>
+        </form>
+        
+    </main>
+
+    <footer>
+        <nav aria-label="Footer">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 North Star Bakery Inc.</p>
+    </footer>
+</body>
+</html>

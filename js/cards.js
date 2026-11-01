@@ -1,3 +1,15 @@
+const btn1 = document.getElementById("btn1")
+const btn2 = document.getElementById("btn2")
+
+document.addEventListener("click", function(e) {
+    console.log(e.target)
+    console.log(e.target.tagName)
+})
+
+
+
+// -----------------------------------------------
+
 const demoButton = document.querySelector("#demo-btn")
 demoButton.addEventListener("click", function(evt) {
     console.log(evt)
